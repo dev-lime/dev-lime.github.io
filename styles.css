@@ -13,9 +13,9 @@ body {
 header {
     background-color: #2d2d2d78;
     backdrop-filter: blur(12px);
-    margin: 0 8px 0 8px;
+    margin: 8px 8px 0 8px;
     padding: 16px 0;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
 }
 
 
@@ -160,7 +160,7 @@ footer {
     backdrop-filter: blur(12px);
     text-align: center;
     padding: 8px 0;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
     bottom: 0;
-    margin: 8px 8px 0 8px;
+    margin: 8px;
 }
