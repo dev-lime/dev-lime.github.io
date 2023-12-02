@@ -1,18 +1,28 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #202020;
     color: #ffffff;
+
+    background-image: url('https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg'); /* Замените 'background.jpg' на URL вашего фона */
+    background-size: cover;
+    background-position: center;
 }
 
 
 header {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d78;
+    backdrop-filter: blur(12px);
     margin: 0 8px 0 8px;
     padding: 16px 0;
     border-radius: 0 0 8px 8px;
 }
 
+
+#img-logo {
+    width: 16px;
+    height: 16px;
+}
 
 nav ul {
     list-style: none;
@@ -33,8 +43,8 @@ nav a {
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 4px;
-    transition: background-color 0.2s ease-in-out;
-    background-color: #323232;
+    transition: background-color 0.2s ease-out;
+    background-color: transparent; /*#32323278*/
 }
   
 nav a:hover {
@@ -48,7 +58,7 @@ nav #button-main {
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 4px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-out;
     background-color: #76b9ed;
 }
 
@@ -64,6 +74,10 @@ nav #button-main:hover {
     nav ul li {
         display: block;
         margin: 0 0 32px 0;
+    }
+
+    nav ul li:last-child {
+        margin: 0;
     }
 
     nav ul #separator {
@@ -85,14 +99,16 @@ nav #button-main:hover {
 .sidebar {
     margin: 8px 8px 0 8px;
     border-radius: 8px;
-    background-color: #2d2d2d;
+    background-color: #2d2d2d78;
+    backdrop-filter: blur(12px);
     flex: 1;
 }
 
 .main-content {
     margin: 8px 8px 0 0;
     border-radius: 8px;
-    background-color: #2d2d2d;
+    background-color: #2d2d2d78;
+    backdrop-filter: blur(12px);
     flex: 2;
 }
 
@@ -107,16 +123,43 @@ nav #button-main:hover {
     }
 
     .main-content {
-        margin: 8px;
+        margin: 8px 8px 0 8px;
     }
 }
 
 
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu-list li {
+    margin-top: 8px;
+}
+  
+.menu-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+    background-color: transparent;
+}
+  
+.menu-list a:hover {
+    background-color: #3e3e3e;
+}
+
+
 footer {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d78;
+    backdrop-filter: blur(12px);
     text-align: center;
     padding: 8px 0;
     border-radius: 8px 8px 0 0;
     bottom: 0;
-    margin: 0 8px;
+    margin: 8px 8px 0 8px;
 }
