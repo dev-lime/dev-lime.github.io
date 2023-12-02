@@ -124,6 +124,19 @@ nav #button-main:hover {
     backdrop-filter: blur(12px);
 }
 
+.news-card {
+    padding: 16px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out;
+}
+
+.news-card:hover {
+    background-color: #2d2d2d;
+}
+
 .nav-card {
     position: sticky;
     top: 8px;
