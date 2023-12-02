@@ -13,7 +13,7 @@ body {
 header {
     background-color: #2d2d2d78;
     backdrop-filter: blur(12px);
-    margin: 8px 8px 0 8px;
+    margin: 8px;
     padding: 16px 0;
     border-radius: 8px;
 }
@@ -88,57 +88,52 @@ nav #button-main:hover {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.sidebar,
-.main-content {
-    padding: 16px;
-    box-sizing: border-box;
-}
-
-.sidebar {
-    margin: 8px 8px 0 8px;
-    border-radius: 8px;
-    background-color: #2d2d2d78;
-    backdrop-filter: blur(12px);
+.column {
     flex: 1;
-    height: 230px; /*Исправить!*/
+    display: flex;
+    flex-direction: column;
 }
 
-.main-content {
-    margin: 8px 8px 0 0;
+.column-20 {
+    flex: 1;
+    max-width: 20%;
+    min-width: 256px;
+}
+
+.column-80 {
+    flex: 1;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 516px) {
+    .column-20,
+    .column-80 {
+        max-width: 100%;
+    }
+}
+
+.card {
+    padding: 16px;
+    margin: 8px;
+    box-sizing: border-box;
     border-radius: 8px;
     background-color: #2d2d2d78;
     backdrop-filter: blur(12px);
-    flex: 2;
 }
-
-@media screen and (max-width: 720px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar-left,
-    .main-content {
-        flex: 1;
-    }
-
-    .main-content {
-        margin: 8px 8px 0 8px;
-    }
-}
-
 
 .menu-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-  
+
 .menu-list li {
     margin-top: 8px;
 }
-  
+
 .menu-list a {
     text-decoration: none;
     color: #ffffff;
@@ -149,7 +144,7 @@ nav #button-main:hover {
     transition: background-color 0.2s ease-out;
     background-color: transparent;
 }
-  
+
 .menu-list a:hover {
     background-color: #3e3e3e;
 }
