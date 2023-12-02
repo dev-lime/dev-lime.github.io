@@ -66,7 +66,7 @@ nav #button-main:hover {
     background-color: #6da9d8;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 516px) {
     nav ul {
         flex-direction: column;
     }
@@ -102,6 +102,7 @@ nav #button-main:hover {
     background-color: #2d2d2d78;
     backdrop-filter: blur(12px);
     flex: 1;
+    height: 230px; /*Исправить!*/
 }
 
 .main-content {
