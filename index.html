@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="img/logo.png">
         <title>GitGuide</title>
+<script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -70,7 +71,7 @@ The last Git release of 2023 is here! Take a look at some of our highlights on w
                         <h3>Вопросы и Ответы</h3>
                         <p>Если у вас возникли вопросы, загляните в раздел "FAQ" (Часто задаваемые вопросы). Возможно, здесь уже есть ответы на ваши запросы. Если нет, вы всегда можете связаться с нами через форму обратной связи.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" id="feedback-card">
                         <h2><a name="feedback">Обратная связь</a></h2>
                         <form action="/submit_feedback" method="post">
     <label for="feedback">Оставьте ваш отзыв:</label>
@@ -79,7 +80,7 @@ The last Git release of 2023 is here! Take a look at some of our highlights on w
     <label for="email">Ваш e-mail (для ответа):</label>
     <input type="email" id="email" name="email" required>
 
-    <button type="submit">Отправить</button>
+    <button type="submit" onclick="submitFeedback()">Отправить</button>
 </form>
                     </div>
                 </div>
