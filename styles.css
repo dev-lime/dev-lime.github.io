@@ -124,6 +124,17 @@ nav #button-main:hover {
     backdrop-filter: blur(12px);
 }
 
+.card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+    background-color: transparent;
+}
+
 .news-card {
     padding: 16px;
     margin: 8px;
@@ -135,17 +146,6 @@ nav #button-main:hover {
 
 .news-card:hover {
     background-color: #2d2d2d;
-}
-
-.news-card a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    display: block;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease-out;
-    background-color: transparent;
 }
 
 .nav-card {
