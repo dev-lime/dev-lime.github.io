@@ -85,6 +85,54 @@ nav #button-main:hover {
     }
 }
 
+/* Стили для кнопок перехода по умолчанию (для больших экранов) */
+.navigation-buttons {
+  display: none;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Растягиваем кнопки на всю высоту панели */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Задайте желаемую высоту панели */
+    background-color: transparent; /* Прозрачный фон кнопки */
+    margin: 0; /* Убеждаемся, что нет внешних отступов */
+  cursor: pointer; /* Показываем, что кнопка может быть нажата */
+    transition: background-color 0.3s; /* Плавные переходы для фона */
+  }
+
+  .navigation-buttons button {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    height: 100%; /* Занимает всю высоту панели */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    backdrop-filter: blur(5px); /* Размытие фона */
+    border: none; /* Убираем границы кнопки */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Надпись внизу кнопки */
+    align-items: center; /* Изображение по центру кнопки */
+  }
+  
+  .navigation-buttons button img {
+  max-width: 100%; /* Установите максимальную ширину для изображения */
+  max-height: 75%; /* Установите максимальную высоту для изображения */
+  object-fit: contain; /* Сохранить пропорции изображения внутри кнопки */
+}
+
+.navigation-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Изменение фона при наведении */
+  }
+}
+
+
 
 .container {
     display: flex;
