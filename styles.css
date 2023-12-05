@@ -4,7 +4,7 @@ body {
     background-color: #202020;
     color: #ffffff;
 
-    background-image: url('https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg'); /* Замените 'background.jpg' на URL вашего фона */
+    background-image: url('https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -135,6 +135,17 @@ nav #button-main:hover {
 
 .news-card:hover {
     background-color: #2d2d2d;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-out;
+    background-color: transparent;
 }
 
 .nav-card {
