@@ -107,8 +107,8 @@ nav #button-main:hover {
     height: 56px; /* Задайте желаемую высоту панели */
     background-color: #00000078;
     backdrop-filter: blur(8px);
-    transition: background-color 0.3s; /* Плавные переходы для фона */
-    transition: transform 0.3s ease-out;
+    transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
+    transition: transform 0.2s ease-out;
     z-index: 1;
   }
   
@@ -116,37 +116,36 @@ nav #button-main:hover {
   transform: translateY(+100%);
 }
 
-  .navigation-buttons button {
+  .navigation-buttons a {
+  text-decoration: none;
     flex: 1;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     height: 100%;
     font-size: 12px;
     color: #ffffff;
     background-color: transparent;
     border: none; /* Убираем границы кнопки */
+    border-radius: 28px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Надпись внизу кнопки */
     align-items: center; /* Изображение по центру кнопки */
+    transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
   }
   
-    .navigation-buttons button img {
-        max-height: 75%;
+    .navigation-buttons a img {
+        max-height: 50%;
         object-fit: contain;
     }
+    
+    .button-text {
+        padding: 5px;
+    }
 
-    /*.navigation-buttons button:hover {
-        
+    .navigation-buttons a:hover {
+        background-color: #2d2d2d;
     }
-    
-    #checked {
-        font-width: 600;
-    }
-    
-    footer {
-        margin: 8px 8px 100px 8px
-    }*/
 }
 
 
