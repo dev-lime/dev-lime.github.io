@@ -33,6 +33,11 @@ a, u {
     text-decoration: none;
 }
 
+code {
+    background-color: #000000;
+    padding: 2px 4px;
+    border: 2px solid #000000;
+}
 
 nav ul {
     list-style: none;
