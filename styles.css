@@ -4,9 +4,9 @@ body {
     background-color: #202020;
     color: #ffffff;
 
-    background-image: url('https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg');
+    /*background-image: url('https://w.forfun.com/fetch/6d/6dfcc6b806763b6a356a2198184cc9a5.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 
 
@@ -23,6 +23,16 @@ header {
     width: 16px;
     height: 16px;
 }
+
+#img-logo_full {
+    width: 100%;
+}
+
+
+a, u {
+    text-decoration: none;
+}
+
 
 nav ul {
     list-style: none;
@@ -97,42 +107,42 @@ nav #button-main:hover {
     }
 
     .navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch; /* Растягиваем кнопки на всю высоту панели */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;   
-    height: 56px; /* Задайте желаемую высоту панели */
-    background-color: #00000078;
-    backdrop-filter: blur(8px);
-    transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
-    transition: transform 0.2s ease-out;
-    z-index: 1;
-  }
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; /* Растягиваем кнопки на всю высоту панели */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;   
+        height: 56px; /* Задайте желаемую высоту панели */
+        background-color: #00000078;
+        backdrop-filter: blur(8px);
+        transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
+        transition: transform 0.2s ease-out;
+        z-index: 1;
+    }
   
-  .navigation-buttons.hidden {
-  transform: translateY(+100%);
-}
+    .navigation-buttons.hidden {
+        transform: translateY(+100%);
+    }
 
-  .navigation-buttons a {
-  text-decoration: none;
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-size: 12px;
-    color: #ffffff;
-    background-color: transparent;
-    border: none; /* Убираем границы кнопки */
-    border-radius: 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Надпись внизу кнопки */
-    align-items: center; /* Изображение по центру кнопки */
-    transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
-  }
+    .navigation-buttons a {
+        text-decoration: none;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: transparent;
+        border: none; /* Убираем границы кнопки */
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Надпись внизу кнопки */
+        align-items: center; /* Изображение по центру кнопки */
+        transition: background-color 0.2s ease-out; /* Плавные переходы для фона */
+    }
   
     .navigation-buttons a img {
         max-height: 50%;
@@ -144,7 +154,7 @@ nav #button-main:hover {
     }
 
     .navigation-buttons a:hover {
-        background-color: #2d2d2d;
+        background-color: #2d2d2d80;
     }
 }
 
@@ -193,8 +203,11 @@ nav #button-main:hover {
     margin: 8px;
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: transparent;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
     transition: background-color 0.2s ease-out;
+    background-color: transparent;
 }
 
 .news-card:hover {
