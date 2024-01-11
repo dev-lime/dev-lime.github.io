@@ -9,6 +9,19 @@ body {
     background-position: center;*/
 }
 
+/* Светлая тема */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Темная тема */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
 
 header {
     background-color: #2d2d2d78;

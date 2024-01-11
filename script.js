@@ -21,3 +21,19 @@ window.onscroll = function() {
 
   prevScrollPos = currentScrollPos;
 };
+
+
+const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+function setThemeMode(darkMode) {
+    document.body.classList.toggle('dark-mode', darkMode);
+    document.body.classList.toggle('light-mode', !darkMode);
+}
+
+// Установка начальной темы в зависимости от предпочтений пользователя
+setThemeMode(prefersDarkMode);
+
+// Слушатель изменения темы в системе
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    setThemeMode(e.matches);
+});
